@@ -1,0 +1,26 @@
+{
+    "operations": {
+        "getMe": {
+            "httpMethod": "GET",
+            "uri": "v1/me"
+        },
+        "getMyStatus": {
+            "httpMethod": "GET",
+            "uri": "v1/my/status"
+        },
+        "getMyTasks": {
+            "httpMethod": "GET",
+            "uri": "v1/my/tasks",
+            "parameters": {
+                "assigned_by_account_id": {
+                    "location": "query",
+                    "type": "integer"
+                },
+                "status": {
+                    "location": "query",
+                    "type": "string"
+                }
+            }
+        }
+    }
+}
